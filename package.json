@@ -8,12 +8,15 @@
     "test": "mocha"
   },
   "dependencies": {
-    "express": "^4.16.4",
-    "merge-images-v2": "^2.0.0",
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "canvas": "^2.6.0",
-    "jimp": "^0.6.4"
+    "express": "^4.16.4",
+    "jimp": "^0.6.4",
+    "knex": "^0.19.4",
+    "md5": "^2.2.1",
+    "merge-images-v2": "^2.0.0",
+    "mysql": "^2.17.1"
   },
   "engines": {
     "node": "8.x"
