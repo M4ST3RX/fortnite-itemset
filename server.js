@@ -56,7 +56,6 @@ app.post('/fn/generate', function(request, response){
 });
 
 app.get('/fn/set/:hash', function(request, response){
-	let start = new Date()
 	let types = [];
 
 	knex("items").where("hash", request.params.hash).then(res => {
