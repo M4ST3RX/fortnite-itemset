@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const md5 = require('md5');
 const api = require('axios');
@@ -7,8 +8,8 @@ const mergeImages = require('merge-images-v2');
 const Canvas = require('canvas');
 const Jimp = require('jimp');
 const knex = require('knex')({
-		client: 'mysql',
-		connection: {
+	client: 'mysql',
+	connection: {
 		host : process.env.DB_HOST,
 		user : process.env.DB_USERNAME,
 		password : process.env.DB_PASSWORD,
@@ -154,19 +155,23 @@ app.get('/fn/set/:hash', function(request, response){
 function rarityImage(rarity){
 	switch(rarity) {
 		case "legendary":
-			return "https://i.imgur.com/tJ0HWEs.png";
+			return "https://i.imgur.com/Kk41Od4.png";
 		case "dark":
-			return "https://i.imgur.com/chvZ9jv.png";
+			return "https://i.imgur.com/nyMZREC.png";
 		case "marvel":
-			return "https://i.imgur.com/YwuNrCH.png";
+			return "https://i.imgur.com/M6qbwnD.png";
+                case "dc":
+                        return "https://i.imgur.com/ki45tE3.png";
+                case "icon":
+                        return "https://i.imgur.com/3Bx9Uxn.png";
 		case "epic":
 			return "https://i.imgur.com/ZtDyXFL.png";
 		case "rare":
-			return "https://i.imgur.com/Kv7vz92.png";
+			return "https://i.imgur.com/c1WikQq.png";
 		case "uncommon":
-			return "https://i.imgur.com/wuvvdwA.png";
+			return "https://i.imgur.com/3i7Yvz8.png";
 		default:
-			return "https://i.imgur.com/YVsRyRA.png";
+			return "https://i.imgur.com/VvNkRYc.png";
 	}
 }
 
