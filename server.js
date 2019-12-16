@@ -154,23 +154,31 @@ app.get('/fn/set/:hash', function(request, response){
 function rarityImage(rarity){
 	switch(rarity) {
 		case "legendary":
-			return "https://i.imgur.com/Kk41Od4.png";
+			return "https://drive.google.com/uc?export=view&id=1twlzktLLg7p8alhKS3t6B7CwKKmVDzgH";
 		case "dark":
-			return "https://i.imgur.com/nyMZREC.png";
+			return "https://i.imgur.com/XApoPGt.png";
 		case "marvel":
-			return "https://i.imgur.com/M6qbwnD.png";
+			return "https://i.imgur.com/Nt0Hqpt.png";
                 case "dc":
-                        return "https://i.imgur.com/ki45tE3.png";
-                case "icon":
-                        return "https://i.imgur.com/3Bx9Uxn.png";
+                        return "https://i.imgur.com/LQPbezt.png";
+                case "icon_series":
+                        return "https://i.imgur.com/yMKt42R.png";
+		case "frozen":
+			return "https://i.imgur.com/eD3qWig.png";
+		case "shadow":
+			return "https://i.imgur.com/g7a8kBZ.png";
+		case "star_wars":
+			return "https://i.imgur.com/vYuXcbA.png";
+		case "lava":
+			return "https://i.imgur.com/wu6uDps.png";
 		case "epic":
-			return "https://i.imgur.com/ZtDyXFL.png";
+			return "https://i.imgur.com/XNbFC5A.png";
 		case "rare":
-			return "https://i.imgur.com/c1WikQq.png";
+			return "https://i.imgur.com/9Qg05DM.png";
 		case "uncommon":
-			return "https://i.imgur.com/3i7Yvz8.png";
+			return "https://i.imgur.com/JFW2Lj3.png";
 		default:
-			return "https://i.imgur.com/VvNkRYc.png";
+			return "https://i.imgur.com/dxOt3zl.png";
 	}
 }
 
@@ -179,6 +187,7 @@ function getMainImage(type, search) {
 }
 
 function getImage(img) {
+	console.log(img)
 	return Jimp.read(img);
 }
 
